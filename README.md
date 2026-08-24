@@ -1,5 +1,19 @@
 # Omoda / Jaecoo → Home Assistant
 
+> ## ⚠️ Development has moved. This line is being retired.
+>
+> Work on this integration now happens in **[`chery-connect-ha/omoda9-ha`](https://github.com/chery-connect-ha/omoda9-ha)**, where the two projects have been merged under a shared organisation. **This repository has not changed since 2 August 2026** and will not receive fixes.
+>
+> **What that means if you are running this today.** Nothing breaks and nothing is urgent — your installation keeps working exactly as it does now. But HACS will keep telling you that you are up to date, because on *this* repository you are, and everything since August is somewhere else: per-vehicle permission handling, the phone/SMS sign-in fix, a language selector, password sign-in, and pre-releases you can try on your own car before they ship.
+>
+> **If you are field-testing for the project, please switch.** A measurement taken against this code tells us about a version we are no longer changing — and the entity names differ between the two lines, so a report from here can be impossible for us to match up with what we ship.
+>
+> **How to switch** (order matters): in HACS, **remove** this integration **first**, then add `https://github.com/chery-connect-ha/omoda9-ha` as a custom repository, install it, and restart Home Assistant. Removing first frees your `entity_id`s so they come back identical, history included. The other way round gets you everything suffixed `_2`.
+>
+> **What happens to this repository.** The open issues move to the canonical one, then a final release explains the move, and only weeks after that does this get archived. Archiving on its own would migrate nobody — HACS simply stops offering updates and you would freeze here without being told. Tracking: [`omoda9-ha#10`](https://github.com/chery-connect-ha/omoda9-ha/issues/10).
+>
+> Nothing here was abandoned. This line was the English fork, most of what it added is being carried across, and everyone who built it is named in the canonical repository's `CONTRIBUTORS.md`.
+
 🌐 **English** · [Changelog](CHANGELOG.md)
 
 ## English Fork & Localization Notes
