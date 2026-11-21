@@ -248,6 +248,10 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
             _LOGGER.debug("Omoda / Jaecoo: vehicle identity backfill failed: %s", err)
 
     hass.async_create_background_task(_start_connection(), "omoda_jaecoo_start")
+
+    # Last: when `chery_connect` is installed, this is the only code that can tell the owner to move.
+    from .successor import async_offer_successor
+    await async_offer_successor(hass, entry)
     return True
 
 
