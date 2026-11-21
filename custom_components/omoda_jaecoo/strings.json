@@ -75,6 +75,10 @@
     }
   },
   "issues": {
+    "successor_available": {
+      "title": "{title}: Chery Connect is installed, move this vehicle to it",
+      "description": "This integration is being replaced by **Chery Connect** (`chery_connect`), the same project under its final name, maintained by the same people. It is now installed on this Home Assistant, and this vehicle is still running on the old integration.\n\n**To move it**, open Settings, Devices and services: Chery Connect is listed as discovered. Press Add and follow the steps. It reuses the login of this integration, so no new code by text message, and it brings your entities and their history across, renamed to English (`sensor.battery` becomes `sensor.chery_connect_battery`).\n\n**Until you do, nothing changes**: this integration keeps working as before. Full guide: {url}"
+    },
     "pin_wrong": {
       "title": "Omoda / Jaecoo: wrong command PIN",
       "fix_flow": {

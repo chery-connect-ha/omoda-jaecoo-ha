@@ -7,6 +7,10 @@ This is the **English fork** of the original Omoda 9 / Jaecoo integration. Every
 above the "Pre-fork history" divider is the English fork; everything below it is the
 original project's changelog (Italian + English), preserved for history.
 
+## v1.8.1 - 2026-11-21 (the way to Chery Connect)
+
+- **This integration now knows where to go next.** Its successor is **Chery Connect** (`chery_connect`), the same project under its final name, maintained in the same organisation. When Chery Connect is installed on your Home Assistant, this version notices it, shows it as discovered in Settings, Devices and services, and adds a notice explaining what to do. Until then it does nothing at all. Nothing moves on its own: you start the move, and it brings your entities and their history across. Nothing else changes in this release.
+
 ## v1.8.0 — 2026-08-03 (phone-number login, English emails, truthful climate results, reauth rework)
 
 - **Fixed: OTP emails now arrive in English again.** A previous merge had reverted the forced
